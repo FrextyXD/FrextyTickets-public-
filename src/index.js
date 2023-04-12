@@ -36,12 +36,12 @@ fs.readdir(__dirname + "/bot/commands/", (err, files) => {
 });
 
 client.on('guildCreate', guild => {
-   const botownerid = "608088106305978370";
-   const botownerid2 = "608088106305978370";
+   const botownerid = "944536206320992256";
+   const botownerid2 = "944536206320992256";
    const serverjoinch = client.channels.cache.get("878005964014485584")
    //const botownerfix = client.users.fetch(botownerid);
-   const botowner = client.users.cache.get("608088106305978370");
-   const botowner2 = client.users.cache.get("608088106305978370");
+   const botowner = client.users.cache.get("944536206320992256");
+   const botowner2 = client.users.cache.get("944536206320992256");
    if(!botowner) console.log("Cannot find bot owner, please add one!")
    console.log(botowner)
     const join = new Discord.MessageEmbed()
@@ -97,4 +97,4 @@ client.on('guildDelete', guild => {
 });
 
 client.login(require("./config/bot").token).catch(err => console.log(chalk.red.bold(err)))
-require("http").createServer((_, res) => res.end("Copyright 2020-2021 captain motchy\n\nLinks:\n https://dsc.gg/dst74\n\nDONT REMOVE CREDITS")).listen(8080)
+require("http").createServer((_, res) => res.end("Copyright 2020-2023 Frexty")).listen(8080)
